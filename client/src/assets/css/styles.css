@@ -1,0 +1,351 @@
+@font-face{
+    font-family: 'music';
+    src: url("./music.ttf");
+
+}
+
+html, body{
+    color:#008000;
+    margin: 0px;
+    height: 100%;
+    background-image: url("./70805.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.actived{
+    border-bottom: 4px solid #84BD00;
+    padding-bottom: 4px;
+}
+
+.jumbotron {
+    background-color: transparent;
+    font-family: 'music';
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.ini{
+    font-family: 'music';
+    font-size: 70px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.ini {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    -webkit-animation: neon4 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon4 1.5s ease-in-out infinite alternate;
+    animation: neon4 1.5s ease-in-out infinite alternate;
+  }
+
+@keyframes neon4 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #B6FF00, 0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
+    }
+  }
+  @-moz-keyframes neon4 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #B6FF00, 0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
+    }
+  }
+  @-webkit-keyframes neon4 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #B6FF00, 0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
+    }
+  }
+
+.central{
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.seguro{
+    height: 30px;
+    margin-top: -22px;
+    margin-right: 10px;
+    background: #222326;
+    position: absolute;
+}
+
+#segurobtn{
+    background: black;
+}
+
+.seguro-album{
+    margin-top: -41px;
+    margin-left: 10px;
+}
+
+.seguro-song{
+    right: 10px;
+    margin-top: -25px;
+    float: right;
+}
+
+.head-title{
+    font-family: 'music';
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    display: block;
+}
+
+#drcha{
+    margin-right: 0%;
+    float: right;
+}
+
+#izqda{
+    margin-left: 160px;
+}
+
+.navigation{
+    font-size: 20px;
+    text-align: center;
+    color: #008000;
+    background: #1C1C1F;
+    height: 100%;
+}
+
+.navigation a{
+    color:#008000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    text-decoration: none;
+  
+}
+
+.navigation a:hover{
+    color: white;
+}
+
+.navigation .glyphicon{
+    font-size: 20px;
+    display: block;
+    width: 100%;
+}
+
+#user_logged{
+    text-align: center;
+    background: #1C1C1F;
+    position: absolute;
+    bottom: 10px;
+    border-top: 1px solid #444;
+    width: 75%;
+}
+
+#user_logged .glyphicon-log-out{
+    font-size: 16px;
+}
+
+#user_logged .user-image{
+    background: #eee;
+    border-radius: 100px;
+    height: 57px;
+    width: 57px;
+    margin: 0px auto;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+#user_logged .user-image img{
+    width: 57px;
+}
+
+.btn-logout{
+    cursor: pointer;
+}
+
+.btn{
+    font-size: 10px;
+}
+
+
+/*ALBUMS Y ARTISTAS*/
+.artist_image_for_edit img,
+.album_image_for_edit img{
+    width: 200px;
+}
+
+.artist-list,
+.album-list{
+    margin: 0px;
+    padding: 0px;
+    margin-top: 30px;
+    list-style: none;
+    min-height: 400px;
+}
+
+.artist-item,
+.album-item{
+    width: 23%;
+    margin: 0px;
+    padding: 0px;
+    height: 317px;
+    border: 1px solid #444;
+    margin-left: 20px;
+    background: #222326;
+}
+
+.artist-item .artist-image,
+.album-item .album-image{
+    height: 246px;
+    width: 100%;
+    overflow: hidden;
+    background: black;
+}
+
+.artist-item .artist-image img,
+.album-item .album-image img{
+    height: 100%;
+    width: 100%;
+}
+
+.album-item .album-image{
+    height: 185px;
+    margin-bottom: 20px;
+}
+
+.artist-item .artist-name,
+.album-item .album-name{
+    color: white;
+    padding: 10px;
+    background: #222326;
+}
+
+.artist-item .artist-name a,
+.album-item .album-name a{
+    color: white;
+}
+
+.album-list{
+    min-height: 800px;
+}
+
+.album-item{
+    width: 250px;
+    height: 250px;
+}
+
+.letr{
+    font-size: 25px;
+}
+
+#letr2{
+    font-family: 'music';
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+#artist-head-card .image,
+#album-head-card .image{
+    margin-top: 10px;
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+    float: left;
+    margin-right: 30px;
+}
+
+#artist-head-card .image img,
+#album-head-card .image img{
+    height: 170px;
+}
+
+.data{
+    margin-top: 10px;
+}
+
+/*CANCIONES*/
+
+#songs-list{
+    margin: 0px;
+    padding: 0px;
+    min-height: 744px;
+    padding-bottom: 138px;
+}
+
+.song-item{
+    list-style: none;
+    border-bottom: 1px solid #444;
+    padding-top: 10px;
+}
+.song-item .buttons{
+    float: right;
+}
+
+#letrcanciones{
+    font-size: 15px;
+    color: white;
+}
+
+#letrPlayer{
+    font-size: 15px;
+    color: rgb(214, 209, 209);
+}
+
+.song-item .title{
+    padding: 12px;
+}
+.song-item .btn-success{
+margin-right: 10px;
+}
+
+/*PLAYER*/
+
+.player{
+    background: #1Cf1;
+    position: fixed;
+    width: 90.5%;
+    bottom: 0;
+    padding: 20px;
+    margin-left: -15px;
+    border-left: 1px solid #444;
+    padding-top: 0;
+}
+
+
+.player .album-image{
+    float: left;
+    width: 115px;
+    height: 115px;
+    overflow: hidden;
+}
+
+.player .album-image img{
+    height: 100%;
+}
+
+.player .audio-file{
+    width: 85%;
+    height: 40px;
+    margin-top: 7px;
+    margin-left: 10px;
+    float: left;
+}
+
+.player audio{
+    width: 100%;
+    height: 40px;
+    padding-top: 54px;
+}
